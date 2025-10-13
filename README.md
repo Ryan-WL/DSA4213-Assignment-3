@@ -17,13 +17,7 @@ This repository contains code to fine-tune the **BioBERT** pretrained transforme
 ---
 
 ## Repository Structure
-.
-├── data/                   # Dataset files (gitignored, downloaded via script)
-├── src/                    # Source code
-│   ├── data_loader.py      # Dataset download & loading functions
-│   ├── train.py            # Training and evaluation script
-├── requirements.txt        # Python dependencies
-├── README.md               # This file
+<pre> ``` your-repo/ ├── data/ ├── scripts/ │ └── download_data.py ├── src/ │ ├── data_loader.py │ ├── train.py │ └── evaluate.py ├── notebooks/ ├── requirements.txt ├── README.md └── main.py ``` </pre>
 
 
 ---
