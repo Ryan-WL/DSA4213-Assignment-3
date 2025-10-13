@@ -32,7 +32,6 @@ your-repo/
 └── main.py
 ```
 
-
 ---
 
 ## Setup
@@ -40,5 +39,20 @@ your-repo/
 ### 1. Clone the repository
 
 ```bash
-git clone <repo-url>
-cd <repo-folder>
+cd Desktop
+git clone https://github.com/Ryan-WL/DSA4213-Assignment-3
+```
+### 2. Install dependencies
+Open command prompt as administrator, and install necessary dependencies by doing the following:
+```bash
+pip install -r requirements.txt
+```
+
+## Dataset
+1. Open the file src/download_dataset.py in Python IDLE.
+2. Press F5 or go to Run > Run Module.
+3. The script will automatically download the dataset into the data/ folder.
+
+## Training of Model
+1. Open the file src/train.py in Python IDLE.
+2. Press F5 or go to Run > Run Module.
