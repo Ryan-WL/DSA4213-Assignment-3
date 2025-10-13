@@ -7,39 +7,6 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score, f1_score
 from tqdm.auto import tqdm
 
-
-DATA_DIR = "data"  # folder where data files are saved
-
-
-def load_split(split_name):
-    """
-    Load a split file (train/val/test) from data folder and return list of dicts with 'sentence' and 'label'.
-    """
-    file_map = {
-        "train": "train.txt",
-        "val": "val.txt",    # note val instead of dev
-        "test": "test.txt",
-    }
-    filepath = os.path.join(DATA_DIR, file_map[split_name])
-    data = []
-
-    with open(filepath, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line or line.startswith("###"):  # skip empty lines or abstract markers
-                continue
-            parts = line.split("\t")
-            if len(parts) == 2:
-                label, sentence = parts
-                data.append({"sentence": sentence, "label": label})
-            else:
-                # fallback for lines that don't split cleanly
-                label = parts[0]
-                sentence = parts[-1]
-                data.append({"sentence": sentence, "label": label})
-    return data
-
-
 class TextClassificationDataset(Dataset):
     def __init__(self, data, tokenizer, label_encoder, max_length=128):
         self.data = data
@@ -176,3 +143,4 @@ def train():
 
 if __name__ == "__main__":
     train()
+
