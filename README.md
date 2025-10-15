@@ -39,8 +39,9 @@ your-repo/
 ### 1. Clone the repository
 
 ```bash
-cd Desktop
+cd Desktop (put in the whole path file)
 git clone https://github.com/Ryan-WL/DSA4213-Assignment-3
+cd (path to cloned repo)\DSA4213-Assignment-3
 ```
 ### 2. Install dependencies
 Open command prompt as administrator, and install necessary dependencies by doing the following:
