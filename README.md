@@ -48,11 +48,15 @@ Open command prompt as administrator, and install necessary dependencies by doin
 ```bash
 pip install -r requirements.txt
 ```
+## Fine-tuning
+1. Open the file main.py in Python IDLE.
+2. Press F5 or go to Run > Run Module.
+3. F1 score of BioBERT on test dataset will be printed, along with the confusion matrix
 
 ## Dataset
-1. Open the file src/download_dataset.py in Python IDLE.
+1. Open the file src/preparation.py in Python IDLE.
 2. Press F5 or go to Run > Run Module.
-3. The script will automatically download the dataset into the data/ folder.
+3. The script will automatically download the dataset into the data/ folder, with data already split into train, val and test for future uses.
 
 ## Training of Model
 1. Open the file src/train.py in Python IDLE.
