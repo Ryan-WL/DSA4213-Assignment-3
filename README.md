@@ -21,8 +21,8 @@ This repository contains code to fine-tune the **BioBERT** pretrained transforme
 DSA4213-Assignment-3/
 ├── main.py
 ├── preparation.py
-├── requirements.txt
 ├── README.md
+├── requirements.txt
 ├── test.py
 ├── train.py
 └── train_lora.py
@@ -44,16 +44,12 @@ Open command prompt as administrator, and install necessary dependencies by doin
 ```bash
 pip install -r requirements.txt
 ```
-## Fine-tuning
-1. Open the file main.py in Python IDLE.
-2. Press F5 or go to Run > Run Module.
-3. F1 score of BioBERT on test dataset will be printed, along with the confusion matrix
-
-## Dataset
-1. Open the file src/preparation.py in Python IDLE.
+### 3. Dataset
+1. Open the file preparation.py in Python IDLE.
 2. Press F5 or go to Run > Run Module.
 3. The script will automatically download the dataset into the data/ folder, with data already split into train, val and test for future uses.
 
-## Training of Model
-1. Open the file src/train.py in Python IDLE.
+## Fine-tuning
+1. Open the file main.py in Python IDLE.
 2. Press F5 or go to Run > Run Module.
+3. F1 score of BioBERT on test dataset will be printed, along with the confusion matrix.
