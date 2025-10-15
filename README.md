@@ -10,9 +10,9 @@ This repository contains code to fine-tune the **BioBERT** pretrained transforme
 
 - **Model:** BioBERT (dmis-lab/biobert-base-cased-v1.1)
 - **Dataset:** PubMed 20k Randomized Controlled Trials (RCT) sentences
-- **Task:** Text classification of sentences by section type (e.g., Background, Methods, Results, Conclusions)
-- **Training:** Full fine-tuning on GPU (if available)
-- **Evaluation metrics:** Accuracy, Macro F1 score
+- **Task:** Text classification of sentences by section type (Background, Objective, Methods, Results, Conclusions)
+- **Training:** Full fine-tuning on GPU and Low-Rank Adpatation (LoRA)
+- **Evaluation metrics:** Accuracy, Macro F1 score, Confusion Matrix
 
 ---
 
@@ -49,7 +49,7 @@ pip install -r requirements.txt
 2. Press F5 or go to Run > Run Module.
 3. The script will automatically download the dataset into the data/ folder, with data already split into train, val and test for future uses.
 
-## Fine-tuning
+## Fine-tuning and Evaluation
 1. Open the file main.py in Python IDLE.
 2. Press F5 or go to Run > Run Module.
-3. F1 score of BioBERT on test dataset will be printed, along with the confusion matrix.
+3. Script will fune-tune the models and will print the accuracy, F1 scores and show the Confusion Matrix accordingly
