@@ -1,6 +1,13 @@
-torch
-transformers
-scikit-learn
-numpy
-matplotlib
-requests
+# Core packages
+torch>=2.0.0
+numpy>=1.21
+scikit-learn>=1.0.2
+matplotlib>=3.4.3
+
+# Hugging Face Transformers and Tokenizers
+transformers>=4.30.0
+datasets>=2.14.0
+accelerate>=0.21.0
+
+# Hugging Face PEFT (for LoRA)
+peft>=0.6.0
