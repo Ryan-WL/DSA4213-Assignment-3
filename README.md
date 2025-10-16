@@ -35,7 +35,7 @@ DSA4213-Assignment-3/
 ### 1. Clone the repository
 
 ```bash
-cd Desktop (put in the whole path file)
+cd Desktop (whole path file)
 git clone https://github.com/Ryan-WL/DSA4213-Assignment-3
 ```
 ### 2. Install dependencies
