@@ -82,7 +82,7 @@ DSA4213-Assignment-3/
 | BERT        | Full-tune   |  0.81    | 0.75       |
 | BERT        | LoRA        |  0.75    | 0.65       |
 
-Confusion matrices are saved in as individual png images.
+Confusion matrices are saved as individual png images with titles according to their transformer and finetuning strategy used.
 
 ## Acknowledgements
 
