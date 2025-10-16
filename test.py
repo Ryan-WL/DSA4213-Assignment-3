@@ -92,6 +92,3 @@ def test(transformer, finetune):
     plt.tight_layout()
     plt.savefig(f"confusion_matrix_{transformer} with {finetune}.png", dpi=300, bbox_inches='tight')
     plt.show()
-
-if __name__ == "__main__":
-    test()
