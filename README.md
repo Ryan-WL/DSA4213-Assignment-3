@@ -77,10 +77,10 @@ DSA4213-Assignment-3/
 
 | Model       | Fine-tuning | Accuracy | F1 (Macro) |
 |-------------|-------------|----------|------------|
-| BioBERT     | Full-tune   |  0.85    | 0.79       |
-| BioBERT     | LoRA        |  0.83    | 0.78       |
-| BERT        | Full-tune   |  0.81    | 0.75       |
-| BERT        | LoRA        |  0.75    | 0.65       |
+| BioBERT     | Full-tune   |  0.8519  | 0.7949     |
+| BioBERT     | LoRA        |  0.8344  | 0.7755     |
+| BERT        | Full-tune   |  0.8143  | 0.7450     |
+| BERT        | LoRA        |  0.7503  | 0.6539     |
 
 Confusion matrices are saved as individual png images with titles according to their transformer and finetuning strategy used.
 
