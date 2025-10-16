@@ -120,6 +120,3 @@ def train_lora(transformer):
 
     print(f"Best {transformer} model saved to {save_path}")
 
-
-if __name__ == "__main__":
-    train_lora()
